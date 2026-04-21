@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Transparent icon: makes the Android 12+ splash screen show only the
+     brand-blue background, with no icon visible. This seamlessly
+     transitions into the Flutter SplashScreen widget. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#00000000" />
+</shape>

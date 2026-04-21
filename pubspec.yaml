@@ -1,0 +1,68 @@
+name: chitpad_app
+description: "Chitpad — your thoughts, beautifully kept. A rich note-taking app with an interactive fox mascot."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management, navigation, DI
+  get: ^4.7.2
+
+  # Rich text editor
+  flutter_quill: ^11.1.0
+
+  # Google Fonts (Nunito, DM Mono)
+  google_fonts: ^6.2.1
+
+  # UUID generation for mock data
+  uuid: ^4.5.1
+
+  # HTTP client (for future API integration)
+  dio: ^5.7.0
+
+  # Secure token storage
+  flutter_secure_storage: ^9.2.4
+
+  # SVG support
+  flutter_svg: ^2.0.17
+
+  # Shimmer loading effects
+  shimmer: ^3.0.0
+  flutter_riverpod: ^2.5.1
+
+  # Image picking for profile photos
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/icon/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  adaptive_icon_background: "#3B3BE8"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
